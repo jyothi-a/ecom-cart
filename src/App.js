@@ -6,7 +6,7 @@ function App() {
       <header>
         <a href="/">Shopping Cart</a>
       </header>
-      <main>Product List</main>
+      <main>test Product List</main>
       <footer>All right is reserved.</footer>
     </div>
   );
