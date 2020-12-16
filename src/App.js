@@ -4,9 +4,9 @@ function App() {
   return (
     <div className="grid-container">
       <header>
-        <a href="/">test Shopping Cart</a>
+        <a href="/">Shopping Cart</a>
       </header>
-      <main>test2 Product List</main>
+      <main>Product List</main>
       <footer>All right is reserved.</footer>
     </div>
   );
