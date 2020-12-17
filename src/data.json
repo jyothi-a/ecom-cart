@@ -5,7 +5,7 @@
       "image": "/images/dress1.jpg",
       "title": "Midi sundress with shirring detail",
       "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
-      "availableSizes": ["X", "L", "XL", "XXL"],
+      "availableSizes": ["X", "L", "XL", "XXL","S"],
       "price": 29.9
     },
     {
@@ -21,7 +21,7 @@
       "image": "/images/dress3.jpg",
       "title": "Midi dress in pink ditsy floral",
       "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
-      "availableSizes": ["X", "M", "L"],
+      "availableSizes": ["X", "M", "L","S"],
       "price": 14.9
     },
     {
@@ -29,7 +29,7 @@
       "image": "/images/dress4.jpg",
       "title": "cami maxi dress in polka dot",
       "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
-      "availableSizes": ["XL"],
+      "availableSizes": ["XL","XS"],
       "price": 25.9
     },
     {
@@ -45,7 +45,7 @@
       "image": "/images/dress6.jpg",
       "title": "Midi tea dress in blue and red spot",
       "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
-      "availableSizes": ["XL", "XXL"],
+      "availableSizes": ["XL", "XXL","S"],
       "price": 49.9
     }
   ]
