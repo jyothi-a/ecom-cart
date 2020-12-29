@@ -1,9 +1,11 @@
 // feature 1
 import React from "react";
 import data from "./data.json";
-import Product from "./components/Product";
+import Products from "./components/Products";
 import Filter from "./components/Filter";
 import Cart from "./components/Cart";
+import store from "./store";
+import  {Provider} from "react-redux";
 
 class App extends React.Component {
   state = {
@@ -21,7 +23,7 @@ class App extends React.Component {
   };
 
   sortProducts = (event) => {
-    console.log(event.target.value);
+    //console.log(event.target.value);
     const sort = event.target.value;
     this.setState((state => ({
       sort:sort,
@@ -36,7 +38,7 @@ class App extends React.Component {
   }
 
   filterProducts = (event) => {
-    console.log(event.target.value);
+    //console.log(event.target.value);
     if(event.target.value === "") {
       this.setState({size:event.target.value, products:data.products})
     } else{
@@ -82,6 +84,7 @@ class App extends React.Component {
 
   render() {
     return (
+      <Provider store={store}> 
       <div className="grid-container">
         <header>
           <a href="/">React Shopping Cart</a>
@@ -96,10 +99,11 @@ class App extends React.Component {
                 filterProducts={this.filterProducts}
                 sortProducts={this.sortProducts}
               ></Filter>
-              <Product 
+              <Products 
                 products={this.state.products} 
                 addToCart={this.addToCart}>                
-              </Product>
+              </Products>
+              
             </div>
             <div className="sidebar">
               <Cart 
@@ -112,6 +116,7 @@ class App extends React.Component {
         </main>
         <footer>All right is reserved.</footer>
       </div>
+      </Provider>
     );
   }
 }

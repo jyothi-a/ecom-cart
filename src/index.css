@@ -139,9 +139,6 @@ footer {
 .cart-header {
   border-bottom: 0.1rem #c0c0c0 solid;
 }
-.cart-header strong {
-  color: #ff8000;
-}
 .cart-items {
   padding: 0;
   width: 100%;
