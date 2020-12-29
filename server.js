@@ -6,18 +6,11 @@ const shortid = require("shortid");
 const app = express();
 app.use(bodyParser.json());
 
-mongoose.connect("mongodb://localhost:27017/react-shopping-cart-db", {
+mongoose.connect("mongodb://localhost/react-shopping-cart-db", {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
 });
-
-//mongoose.connect("mongodb://127.0.0.1:27017/react-shopping-cart-db", { useNewUrlParser: true }); 
-mongoose.connect("mongodb://localhost:27017/react-shopping-cart-db", { useNewUrlParser: true });
-
-mongoose.set('useNewUrlParser', true);
-mongoose.set('useCreateIndex', true);
-mongoose.set('useUnifiedTopology', true);
 
 const Product = mongoose.model(
   "products",
@@ -47,5 +40,5 @@ app.delete("/api/products/:id", async (req, res) => {
   res.send(deletedProduct);
 });
 
-const port = process.env.PORT || 5000;
-app.listen(port, () => console.log("serve at http://localhost:5000"));
+const port = process.env.PORT || 5001;
+app.listen(port, () => console.log("serve at http://localhost:5001"));
